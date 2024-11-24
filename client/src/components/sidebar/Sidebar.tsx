@@ -69,13 +69,18 @@ function Sidebar() {
                 />
 
                 {/* Button to change activity state coding or drawing */}
-                <button className="self-end" onClick={changeState}>
-                    {activityState === ACTIVITY_STATE.CODING ? (
-                        <MdOutlineDraw size={30} />
-                    ) : (
-                        <IoCodeSlash size={30} />
-                    )}
-                </button>
+                <div className="flex items-center justify-center">
+                    <button
+                        className="self-end  rounded p-1 transition-colors duration-200 ease-in-out hover:bg-[#3D404A]"
+                        onClick={changeState}
+                    >
+                        {activityState === ACTIVITY_STATE.CODING ? (
+                            <MdOutlineDraw size={30} />
+                        ) : (
+                            <IoCodeSlash size={30} />
+                        )}
+                    </button>
+                </div>
             </div>
             <div
                 className="absolute left-0 top-0 z-20 w-full flex-grow flex-col bg-dark md:static md:w-[300px]"
