@@ -15,7 +15,6 @@ function Users() {
         </div>
     )
 }
-
 const User = ({ user }: { user: RemoteUser }) => {
     const { username, status } = user
     const title = `${username} - ${status === USER_CONNECTION_STATUS.ONLINE ? "online" : "offline"}`

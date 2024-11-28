@@ -8,6 +8,7 @@ import { GoSignOut } from "react-icons/go"
 import { IoShareOutline } from "react-icons/io5"
 import { LuCopy } from "react-icons/lu"
 import { useNavigate } from "react-router-dom"
+import VideoCal from "@/components/video/video-call"
 
 function UsersView() {
     const navigate = useNavigate()
@@ -49,6 +50,7 @@ function UsersView() {
             <h1 className="view-title">Users</h1>
             {/* List of connected users */}
             <Users />
+            <VideoCal/>
             <div className="flex flex-col items-center gap-4 pt-4">
                 <div className="flex w-full gap-4">
                     {/* Share URL button */}
