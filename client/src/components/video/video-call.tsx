@@ -13,12 +13,12 @@ import {
 import "@stream-io/video-react-sdk/dist/css/styles.css"
 import "./styles.css"
 
-const apiKey = "mmhfdzb5evj2"
-const callId = "dZzsVbtNo3Gc"
+const apiKey = 'mmhfdzb5evj2';
+const callId = 'BiGNZTxPgu4Y';
 
 export default function VideoCal() {
     const currentUser = useVideoCall() // Hook called inside the component
-    const userId = "Bossk"
+    const userId = 'Jarael';
 
     const user: User = {
         id: userId, // Ensure this matches `user_id` in token
@@ -26,8 +26,7 @@ export default function VideoCal() {
         image: `https://api.dicebear.com/6.x/adventurer/svg?seed=${currentUser.username || "user"}`, // Generate avatar
     }
 
-    const token =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL0Jvc3NrIiwidXNlcl9pZCI6IkJvc3NrIiwidmFsaWRpdHlfaW5fc2Vjb25kcyI6NjA0ODAwLCJpYXQiOjE3MzI1MDk3MDcsImV4cCI6MTczMzExNDUwN30.IoVVmzSDhFulAeRBQIu0TmhgCMvoXZeJG5tg4km65Cs"
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL0phcmFlbCIsInVzZXJfaWQiOiJKYXJhZWwiLCJ2YWxpZGl0eV9pbl9zZWNvbmRzIjo2MDQ4MDAsImlhdCI6MTczMzM3MTk3MSwiZXhwIjoxNzMzOTc2NzcxfQ.SXNT-MWfpAbdDlx1RnsaKK_uLeucu3uKiF2XyPyOp5o';
 
     const client = new StreamVideoClient({ apiKey, user, token })
     const call = client.call("default", callId)
