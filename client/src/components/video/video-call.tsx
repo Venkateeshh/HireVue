@@ -13,7 +13,7 @@ import {
 import "@stream-io/video-react-sdk/dist/css/styles.css"
 import "./styles.css"
 
-const apiKey = "mmhfdzb5evj2"
+const apiKey = "268wnazfrz7z"
 const callId = "kYFLhjN2Ikw8"
 
 export default function VideoCal() {
