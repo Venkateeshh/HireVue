@@ -14,11 +14,11 @@ import "@stream-io/video-react-sdk/dist/css/styles.css"
 import "./styles.css"
 
 const apiKey = "mmhfdzb5evj2"
-const callId = "3AYaWhE7J9YI"
+const callId = "kYFLhjN2Ikw8"
 
 export default function VideoCal() {
     const currentUser = useVideoCall() // Hook called inside the component
-    const userId = "Anakin_Solo"
+    const userId = "'Darth_Maul"
 
     const user: User = {
         id: userId, // Ensure this matches `user_id` in token
@@ -27,7 +27,7 @@ export default function VideoCal() {
     }
 
     const token =
-        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL0FuYWtpbl9Tb2xvIiwidXNlcl9pZCI6IkFuYWtpbl9Tb2xvIiwidmFsaWRpdHlfaW5fc2Vjb25kcyI6NjA0ODAwLCJpYXQiOjE3MzM3OTY1NDUsImV4cCI6MTczNDQwMTM0NX0.tKL7DIZGaLeNlOM-DenBCL7Ss6atO_e8MRdEivjRobI"
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL0RhcnRoX01hdWwiLCJ1c2VyX2lkIjoiRGFydGhfTWF1bCIsInZhbGlkaXR5X2luX3NlY29uZHMiOjYwNDgwMCwiaWF0IjoxNzM4ODU1OTU3LCJleHAiOjE3Mzk0NjA3NTd9.HFgSkd__WQCdzZstadON4nkuI6SmrBJpnCy1PzajDRo"
 
     const client = new StreamVideoClient({ apiKey, user, token })
     const call = client.call("default", callId)
