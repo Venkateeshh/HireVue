@@ -13,12 +13,12 @@ import {
 import "@stream-io/video-react-sdk/dist/css/styles.css"
 import "./styles.css"
 
-const apiKey = "268wnazfrz7z"
+const apiKey = "mmhfdzb5evj2"
 const callId = "kYFLhjN2Ikw8"
 
 export default function VideoCal() {
     const currentUser = useVideoCall() // Hook called inside the component
-    const userId = "'Darth_Maul"
+    const userId = "Darth_Maul"
 
     const user: User = {
         id: userId, // Ensure this matches `user_id` in token
